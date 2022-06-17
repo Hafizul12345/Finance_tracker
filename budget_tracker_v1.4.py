@@ -33,7 +33,6 @@ class Budget_Tracker:
         for expense in self.source_expense_dict:
             self.total_expense = (self.total_expense 
                                   + self.source_expense_dict[expense])
-            #print(self.total_expense)
     
     def set_balance(self):
         self.balance = self.total_income - self.total_expense
